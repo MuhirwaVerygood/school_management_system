@@ -7,6 +7,7 @@ const userRoute = require('./routes/userRoutes');
 const teacherRoute = require('./routes/teacherRoutes');
 const marksRoute = require('./routes/marksRoutes');
 const courseRoute = require('./routes/courseRoutes');
+const schoolRoute = require('./routes/schoolRoutes');
 const app= express();
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
@@ -24,6 +25,7 @@ app.use("/api/v1/users", userRoute )
 app.use("/api/v1/teachers", teacherRoute )
 app.use("/api/v1/marks", marksRoute )
 app.use("/api/v1/courses", courseRoute )
+app.use("/api/v1/schools", schoolRoute )
 
 
 
